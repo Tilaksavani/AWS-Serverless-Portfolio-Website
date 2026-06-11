@@ -182,7 +182,7 @@ document
   });
 
 console.log(
-  "%c☁ Tilak PORTFOLIO\n%cBuilt on AWS — S3 · CloudFront · API Gateway · Lambda · DynamoDB",
+  "%c☁ TILAK PORTFOLIO\n%cBuilt on AWS — S3 · CloudFront · API Gateway · Lambda · DynamoDB",
   "color: #e8ff47; font-size: 18px; font-weight: bold;",
   "color: #888880; font-size: 12px;",
 );

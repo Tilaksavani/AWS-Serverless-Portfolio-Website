@@ -60,16 +60,16 @@ CloudFront (HTTPS + Global CDN)
 
 ## 🛠️ AWS Services Used
 
-| Service | Purpose |
-|---|---|
-| **Amazon S3** | Stores and hosts static website files |
-| **Amazon CloudFront** | Delivers the website globally with HTTPS |
+| Service                | Purpose                                             |
+| ---------------------- | --------------------------------------------------- |
+| **Amazon S3**          | Stores and hosts static website files               |
+| **Amazon CloudFront**  | Delivers the website globally with HTTPS            |
 | **Amazon API Gateway** | Provides the REST API endpoint for the contact form |
-| **AWS Lambda** | Runs backend code without managing servers |
-| **Amazon DynamoDB** | Stores contact form submissions |
-| **AWS IAM** | Manages roles, policies, and service permissions |
-| **Amazon CloudWatch** | Stores Lambda logs and helps debug errors |
-| **AWS Budgets** | Sends alerts to control AWS spending |
+| **AWS Lambda**         | Runs backend code without managing servers          |
+| **Amazon DynamoDB**    | Stores contact form submissions                     |
+| **AWS IAM**            | Manages roles, policies, and service permissions    |
+| **Amazon CloudWatch**  | Stores Lambda logs and helps debug errors           |
+| **AWS Budgets**        | Sends alerts to control AWS spending                |
 
 ---
 
@@ -125,8 +125,8 @@ Each contact form submission is stored like this:
 {
   "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
   "timestamp": "2026-06-08T15:08:03.000Z",
-  "name": "Arun",
-  "email": "arun78@gmail.com",
+  "name": "bob",
+  "email": "bob78@gmail.com",
   "message": "Hi, I saw your portfolio!",
   "status": "new"
 }
@@ -208,9 +208,7 @@ Example policy:
   "Statement": [
     {
       "Effect": "Allow",
-      "Action": [
-        "dynamodb:PutItem"
-      ],
+      "Action": ["dynamodb:PutItem"],
       "Resource": "arn:aws:dynamodb:REGION:ACCOUNT_ID:table/portfolio-contacts"
     }
   ]
@@ -282,14 +280,14 @@ To test the contact form locally, temporarily set `API_ENDPOINT` in `script.js` 
 
 ## 🧯 Common Issues and Fixes
 
-| Issue | Possible Reason | Fix |
-|---|---|---|
-| Contact form fails | Wrong API Gateway URL | Check `API_ENDPOINT` in `script.js` |
-| CORS error | CORS not enabled in API Gateway | Enable CORS and redeploy the API |
-| Lambda error | Missing IAM permission | Allow Lambda to write to DynamoDB |
-| No data in DynamoDB | Lambda code/table name mismatch | Check table name in Lambda code |
-| Website not updating | CloudFront cache | Create a CloudFront invalidation |
-| Access denied on website | S3/CloudFront permission issue | Check bucket policy or origin access settings |
+| Issue                    | Possible Reason                 | Fix                                           |
+| ------------------------ | ------------------------------- | --------------------------------------------- |
+| Contact form fails       | Wrong API Gateway URL           | Check `API_ENDPOINT` in `script.js`           |
+| CORS error               | CORS not enabled in API Gateway | Enable CORS and redeploy the API              |
+| Lambda error             | Missing IAM permission          | Allow Lambda to write to DynamoDB             |
+| No data in DynamoDB      | Lambda code/table name mismatch | Check table name in Lambda code               |
+| Website not updating     | CloudFront cache                | Create a CloudFront invalidation              |
+| Access denied on website | S3/CloudFront permission issue  | Check bucket policy or origin access settings |
 
 ---
 
@@ -343,8 +341,8 @@ To avoid future charges, delete unused resources when you no longer need the pro
 Add screenshots here before uploading to GitHub:
 
 ```text
-1. Portfolio homepage
-2. Contact form
+1. Portfolio homepage ![Portfolio homepage](image.png)
+2. Contact form ![Contact form](image-1.png)
 3. API Gateway endpoint
 4. Lambda function
 5. DynamoDB saved message
@@ -356,18 +354,12 @@ Add screenshots here before uploading to GitHub:
 
 ## 📚 AWS Cloud Practitioner Concepts Covered
 
-| CLF-C02 Domain | Project Component |
-|---|---|
-| Cloud Concepts | Serverless architecture, scalability, pay-per-use model |
-| Security and Compliance | IAM roles, least-privilege access, HTTPS |
+| CLF-C02 Domain                | Project Component                                         |
+| ----------------------------- | --------------------------------------------------------- |
+| Cloud Concepts                | Serverless architecture, scalability, pay-per-use model   |
+| Security and Compliance       | IAM roles, least-privilege access, HTTPS                  |
 | Cloud Technology and Services | S3, CloudFront, API Gateway, Lambda, DynamoDB, CloudWatch |
-| Billing, Pricing, and Support | AWS Free Tier awareness, AWS Budgets, cost monitoring |
-
----
-
-## 📄 Resume Description
-
-Built and deployed a serverless portfolio website on AWS using S3, CloudFront, API Gateway, Lambda, and DynamoDB. Configured IAM roles for secure service-to-service access, implemented a contact form backend with Python Lambda, monitored logs using CloudWatch, and created AWS Budgets for cost control.
+| Billing, Pricing, and Support | AWS Free Tier awareness, AWS Budgets, cost monitoring     |
 
 ---
 
