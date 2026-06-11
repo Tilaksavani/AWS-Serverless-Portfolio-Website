@@ -11,7 +11,7 @@ A fully serverless personal portfolio website built and deployed on AWS. The web
 Add your deployed CloudFront URL here:
 
 ```text
-https://your-cloudfront-domain.cloudfront.net
+https://d303g9auns1wab.cloudfront.net/
 ```
 
 ---

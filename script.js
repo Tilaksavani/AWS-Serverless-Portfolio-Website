@@ -10,8 +10,7 @@
 //     Example:
 //     https://abc123xyz.execute-api.ap-south-1.amazonaws.com/prod/contact
 // ─────────────────────────────────────────────
-const API_ENDPOINT =
-  "https://faef0kigpe.execute-api.us-east-1.amazonaws.com/prod/contact";
+const API_ENDPOINT = "";
 
 // ── NAV SCROLL EFFECT ──────────────────────────
 const nav = document.getElementById("nav");
@@ -79,6 +78,8 @@ document.head.appendChild(style);
 const form = document.getElementById("contactForm");
 const submitBtn = document.getElementById("submitBtn");
 const formStatus = document.getElementById("formStatus");
+
+const DEMO_MODE = true;
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
