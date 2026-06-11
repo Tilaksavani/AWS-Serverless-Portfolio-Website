@@ -1,4 +1,16 @@
 /* =============================================
+   TILAK PORTFOLIO — script.js
+   AWS API Gateway Contact Form Integration
+   ============================================= */
+
+// ─────────────────────────────────────────────
+// ⚠️  REPLACE THIS WITH YOUR API GATEWAY URL
+//     After deploying Lambda + API Gateway,
+//     paste your endpoint URL here.
+//     Example:
+//     https://abc123xyz.execute-api.ap-south-1.amazonaws.com/prod/contact
+// ─────────────────────────────────────────────
+/* =============================================
    SURYA PORTFOLIO — script.js
    AWS API Gateway Contact Form Integration
    ============================================= */
@@ -182,7 +194,7 @@ document
   });
 
 console.log(
-  "%c☁ SURYA PORTFOLIO\n%cBuilt on AWS — S3 · CloudFront · API Gateway · Lambda · DynamoDB",
+  "%c☁ Tilak PORTFOLIO\n%cBuilt on AWS — S3 · CloudFront · API Gateway · Lambda · DynamoDB",
   "color: #e8ff47; font-size: 18px; font-weight: bold;",
   "color: #888880; font-size: 12px;",
 );
