@@ -10,18 +10,6 @@
 //     Example:
 //     https://abc123xyz.execute-api.ap-south-1.amazonaws.com/prod/contact
 // ─────────────────────────────────────────────
-/* =============================================
-   SURYA PORTFOLIO — script.js
-   AWS API Gateway Contact Form Integration
-   ============================================= */
-
-// ─────────────────────────────────────────────
-// ⚠️  REPLACE THIS WITH YOUR API GATEWAY URL
-//     After deploying Lambda + API Gateway,
-//     paste your endpoint URL here.
-//     Example:
-//     https://abc123xyz.execute-api.ap-south-1.amazonaws.com/prod/contact
-// ─────────────────────────────────────────────
 const API_ENDPOINT = "";
 
 // ── NAV SCROLL EFFECT ──────────────────────────
