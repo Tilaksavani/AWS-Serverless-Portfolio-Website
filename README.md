@@ -341,9 +341,8 @@ To avoid future charges, delete unused resources when you no longer need the pro
 Add screenshots here before uploading to GitHub:
 
 ```text
-1. Portfolio homepage 
-   (image.png)
-2. Contact form ![Contact form](image-1.png)
+1. Portfolio homepage
+2. Contact form
 3. API Gateway endpoint
 4. Lambda function
 5. DynamoDB saved message
