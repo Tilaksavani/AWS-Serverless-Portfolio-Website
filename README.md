@@ -311,7 +311,6 @@ Expected monthly cost is usually close to `$0` for low-traffic personal usage, b
 
 Add screenshots here before uploading to GitHub:
 
-```text
 1. Portfolio homepage ![Portfolio homepage](screenshots/Portfolio_homepage.png)
 2. Contact form ![Contact form](screenshots/Contact_form.png)
 3. API Gateway endpoint ![API Gateway endpoint](screenshots\API_Gateway_endpoint.png)
@@ -319,7 +318,6 @@ Add screenshots here before uploading to GitHub:
 5. DynamoDB saved message ![DynamoDB saved message](screenshots/DynamoDB_saved_message.png)
 6. CloudWatch logs ![CloudWatch logs](screenshots/CloudWatch_logs.png)
 7. AWS Budget alert ![AWS Budget alert](screenshots/AWS_Budget_alert.png)
-```
 
 ---
 
