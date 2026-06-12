@@ -307,41 +307,12 @@ Expected monthly cost is usually close to `$0` for low-traffic personal usage, b
 
 ---
 
-## 🧹 Cleanup
-
-To avoid future charges, delete unused resources when you no longer need the project:
-
-1. Delete CloudFront distribution
-2. Delete S3 bucket contents and bucket
-3. Delete API Gateway API
-4. Delete Lambda function
-5. Delete DynamoDB table
-6. Delete unused IAM roles and policies
-7. Delete or update AWS Budget alerts
-
----
-
-## 📋 What I Learned
-
-- How AWS services connect together in a real serverless application
-- How S3 stores static website files
-- How CloudFront improves delivery using a CDN
-- How API Gateway exposes a backend endpoint
-- How Lambda runs backend code without server management
-- How DynamoDB stores NoSQL data
-- How IAM roles control access between AWS services
-- How CloudWatch helps with logs and debugging
-- How AWS Budgets helps with cost control
-- How to think about AWS architecture from frontend to backend
-
----
-
 ## 📸 Screenshots
 
 Add screenshots here before uploading to GitHub:
 
 ```text
-1. Portfolio homepage
+1. Portfolio homepage ![alt text](image-2.png)
 2. Contact form
 3. API Gateway endpoint
 4. Lambda function
