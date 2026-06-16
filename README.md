@@ -6,16 +6,6 @@ A fully serverless personal portfolio website built and deployed on AWS. The web
 
 ---
 
-## 🔗 Live Demo
-
-Add your deployed CloudFront URL here:
-
-```text
-https://d303g9auns1wab.cloudfront.net/
-```
-
----
-
 ## 📌 Project Overview
 
 This project demonstrates how multiple AWS services work together in a real cloud application:
